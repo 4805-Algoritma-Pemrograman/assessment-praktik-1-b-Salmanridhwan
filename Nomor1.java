@@ -2,10 +2,10 @@
 
 public class Nomor1{
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.print("Masukkan total penjualan salesman: ");
-        double totalPenjualan = scanner.nextDouble();
+        double totalPenjualan = input.nextDouble();
         
         double komisi;
 
@@ -18,10 +18,9 @@ public class Nomor1{
             komisi = komisiPertama + komisiSisa;
         }
         
-        // Output
-        System.out.printf("Total penjualan salesman: %.0f\n", totalPenjualan);
-        System.out.printf("Komisi yang didapatkan = %.1f\n", komisi);
+        System.out.println("Total penjualan salesman", totalPenjualan);
+        System.out.println("Komisi yang didapatkan:", komisi);
         
-        scanner.close();
+        input.close();
     }
 }
