@@ -2,16 +2,26 @@
 
 public class Nomor1{
     public static void main(String[] args){
-        int totalPenjualan;
-        double komisi;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan total penjualan salesman: ");
+        double totalPenjualan = scanner.nextDouble();
         
-        if (totalPenjualan >= 500000) {
-            komisi = totalPenjualan * 0.15;
+        double komisi;
+
+        if (totalPenjualan <= 500000) {
+            komisi = totalPenjualan * 0.10; 
+        } else {
+            double komisiPertama = 500000 * 0.10; 
+            double sisaPenjualan = totalPenjualan - 500000;
+            double komisiSisa = sisaPenjualan * 0.15; 
+            komisi = komisiPertama + komisiSisa;
         }
-        else if (totalPenjualan == 500000) {
-            komisi = totalPenjualan * 0.1;
-        }
-        System.out.println("total penjualan salesman :" + totalPenjualan);
-        System.out.println("komisi yang didapatkan :" + komisi);
+        
+        // Output
+        System.out.printf("Total penjualan salesman: %.0f\n", totalPenjualan);
+        System.out.printf("Komisi yang didapatkan = %.1f\n", komisi);
+        
+        scanner.close();
     }
 }
