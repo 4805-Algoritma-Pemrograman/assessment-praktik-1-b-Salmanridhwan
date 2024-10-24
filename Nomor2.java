@@ -1,3 +1,5 @@
+
+
 import java.util.Scanner;
 
 public class Nomor2 {
@@ -38,3 +40,5 @@ public class Nomor2 {
         input.close();
     }
 }
+
+
