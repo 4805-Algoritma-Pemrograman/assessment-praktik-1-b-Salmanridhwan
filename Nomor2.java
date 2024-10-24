@@ -2,7 +2,7 @@
 
 public class Nomor2{
     public static void main(String[] args){
-                Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         
         int[] tarif = {0, 50000, 40000, 30000};
         double[] biayaPelayananPersentase = {0, 0.3, 0.2, 0.1};
@@ -39,3 +39,4 @@ public class Nomor2{
 
     }
 }
+
