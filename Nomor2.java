@@ -1,9 +1,7 @@
+import java.util.Scanner;
 
-
-import java.util.Scanner
-
-public class Nomor2{
-    public static void main(String[] args){
+public class Nomor2 {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
         int[] tarif = {0, 50000, 40000, 30000};
@@ -38,7 +36,5 @@ public class Nomor2{
         System.out.println("Total pendapatan = " + totalPendapatan);
         
         input.close();
-
     }
 }
-
