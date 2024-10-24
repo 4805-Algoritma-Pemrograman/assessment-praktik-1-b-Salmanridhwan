@@ -13,9 +13,6 @@ public class Nomor1{
             komisi = totalPenjualan * 0.10; 
         } else {
             double komisiPertama = 500000 * 0.10; 
-            double sisaPenjualan = totalPenjualan - 500000;
-            double komisiSisa = sisaPenjualan * 0.15; 
-            komisi = komisiPertama + komisiSisa;
         }
         
         System.out.println("Total penjualan salesman", totalPenjualan);
